@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../assets/css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form class="signup" action="../actions/register.php" method="POST" onsubmit="return validateForm()">
+            
+            <!-- First Name -->
+            <label for="firstname">First Name</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <!-- Last Name -->
+            <label for="lastname">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <!-- Email -->
+            <label for="email">Enter email here</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Confirm Password -->
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            
+            
+
+            <!-- Sign Up Button -->
+            <button type="submit" class="btn">Sign Up</button>
+
+            <!-- Error Message Div -->
+            <div id="error-message" style="color: red; margin-top: 10px;"></div>
+
+            <!-- Link to Login Page -->
+            <p>Already have an account? <a href="Login.html">Login here</a>.</p>
+        </form>
+        <div class="show-password">
+            <input type="checkbox" id="showPassword" onclick="togglePassword()"> Show Password
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const password = document.getElementById("password");
+            const confirmPassword = document.getElementById("confirm_password");
+
+            if (password.type === "password" && confirmPassword.type === "password") {
+                password.type = "text";
+                confirmPassword.type = "text";
+            } else {
+                password.type = "password";
+                confirmPassword.type = "password";
+            }
+        }
+
+        function validateForm() {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm_password").value;
+            const errorMessage = document.getElementById("error-message");
+
+            // Password format: Minimum 8 characters, at least one uppercase letter, one lowercase letter, one number, and one special character
+            const passwordFormat = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+            // Clear previous error message
+            errorMessage.innerHTML = "";
+
+            // Checking if passwords match
+            if (password !== confirmPassword) {
+                errorMessage.innerHTML = "Passwords do not match";
+                return false; // Prevent form submission
+            }
+
+            // Check if password meets format requirements
+            if (!passwordFormat.test(password)) {
+                errorMessage.innerHTML = "Password must be at least 8 characters, contain one uppercase letter, one lowercase letter, one number, and one special character.";
+                return false; // Prevent form submission
+            }
+
+            return true; 
+        }
+    </script>
+</body>
+</html>

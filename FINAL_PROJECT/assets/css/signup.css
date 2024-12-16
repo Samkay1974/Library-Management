@@ -1,0 +1,110 @@
+/* General Reset */
+body, h2, p, label, input, button, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Style */
+body {
+    background:url('../Images/sign.avif') no-repeat center center;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Style */
+.container {
+    background: tan; /* Clean white card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    opacity: 0.95; /* Slight transparency for blending with background */
+}
+
+/* Header Style */
+.container h2 {
+    font-size: 24px;
+    color: #4a2c2a; /* Deep brown for a bookish tone */
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #4a2c2a;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/* Button Style */
+form .btn {
+    background: #8b5e34; /* Warm brown color */
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+form .btn:hover {
+    background: #a67543; /* Slightly lighter on hover */
+}
+
+
+#error-message {
+    font-size: 12px;
+    color: #e63946;
+}
+
+/* Link Style */
+form p a {
+    color: #8b5e34;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    form input, form .btn {
+        font-size: 14px;
+    }
+}
+.show-password{
+    margin: 10px;
+    margin-right:40px;
+}

@@ -1,0 +1,100 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light tan background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: url('../Images/sign.avif');
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: white; /* Tomato color */
+}
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #c15c5c; /* Tomato color */
+    color: white;
+    font-size: 1.1rem;
+}
+
+tr:hover {
+    background-color: #f9e8e3; /* Light tan color for hover effect */
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #c15c5c; /* Tomato color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #a74c4c; /* Darker tomato for hover */
+}
+
+form {
+    display: inline;
+}
+
+input[type="hidden"] {
+    display: none;
+}
+.btn{
+    text-align: center;
+  }
+   .btn a{
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(45deg, tomato, tomato);
+      color: white;
+      text-align: center;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    }
+    
+    .btn a:hover {
+      background:tomato;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+    }
+    
+    .btn a:active {
+      transform: translateY(1px);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        font-size: 0.9rem;
+    }
+}

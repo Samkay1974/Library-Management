@@ -1,0 +1,169 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../Images/dash_back.avif'); 
+    background-size: cover;
+    background-position: center;
+    background-color: #f4f4f9; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #c15c5c; /* Tomato color */
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color:white;
+}
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #c15c5c; /* Tomato color */
+    color: white;
+    font-size: 1.1rem;
+}
+
+td {
+    font-size: 1rem;
+}
+
+tr:hover {
+    background-color: #f9e8e3; /* Light tan color for hover effect */
+}
+
+form {
+    display: inline;
+    text-align: center;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #c15c5c; /* Tomato color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #a74c4c; /* Darker tomato for hover */
+}
+.btn{
+    text-align: center;
+  }
+   .btn a{
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(45deg, tomato, tomato);
+      color: white;
+      text-align: center;
+      padding: 0.75rem 2rem;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    }
+    
+    .btn a:hover {
+      background:tomato;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+    }
+    
+    .btn a:active {
+      transform: translateY(1px);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+    .search {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    form input[type="text"] {
+        width: 200px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    
+    .btn .badge {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+.logout-btn {
+    position: absolute;
+    top: 10px; /* Distance from the top of the page */
+    right: 10px; /* Distance from the right of the page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the logout button */
+.logout-btn {
+    background-color: #d9534f; /* Red background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+    
+    
+   
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        font-size: 0.9rem;
+    }
+}

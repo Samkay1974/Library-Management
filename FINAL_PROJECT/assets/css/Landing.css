@@ -1,0 +1,124 @@
+/* General Reset */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background-color:tomato;
+    padding: 1rem 0;
+  }
+  
+  header nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  header .nav-links li a:hover {
+    color: #ffd700;
+  }
+  
+  /* Main Section */
+  .wrapper {
+    max-width: 1100px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .wrapper h1 {
+    font-size: 2.5rem;
+    color: tomato;
+    margin-bottom: 1rem;
+  }
+  
+  .wrapper .info {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color:black;
+  }
+  
+  .wrapper .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0056b3;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .wrapper .btn:hover {
+    background-color: #004494;
+  }
+  
+  /* Footer */
+  footer {
+    background-color:tomato;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+.btn{
+  text-align: center;
+}
+ .btn a{
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(45deg, tomato, tomato);
+    color: white;
+    text-align: center;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn a:hover {
+    background:tomato;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  .btn a:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
